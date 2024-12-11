@@ -40,7 +40,7 @@ app.post("/upload-file", async (req, res) => {
 
         const upload = await s3.upload(params).promise();
 
-        return res.status(200).json({ status: 200, status_code: true, message: "File uploade s3 bucket successfully.", data: upload })
+        return res.status(200).json({ status: 200, status_code: true, message: "File uploaded s3 bucket successfully.", data: upload })
 
     }
     catch (error) {
